@@ -13,13 +13,14 @@
     "typescript": "^3.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js",
-    "watch": "webpack --config webpack.dev.config.js --watch",
-    "build:dev": "webpack --config webpack.dev.config.js",
-    "build:prod": "webpack --config webpack.prod.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "watch": "webpack --config webpack.dev.js --watch",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "author": "partypeopleland@gmail.com",
   "license": "ISC"
