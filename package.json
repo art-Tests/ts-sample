@@ -12,13 +12,14 @@
     "source-map-loader": "^0.2.4",
     "typescript": "^3.0.1",
     "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   },
   "scripts": {
-    "watch": "webpack --config webpack.config.js --mode development --watch",
-    "build:dev": "webpack --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production",
-    "build:prod": "webpack --config webpack.config.js -p"
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "watch": "webpack --config webpack.dev.config.js --watch",
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "build:prod": "webpack --config webpack.prod.config.js"
   },
   "author": "partypeopleland@gmail.com",
   "license": "ISC"
